@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "674182233992",
+    "firebase_url": "https://fir-add-delete.firebaseio.com",
+    "project_id": "fir-add-delete",
+    "storage_bucket": "fir-add-delete.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674182233992:android:10b71daff37a1afe",
+        "android_client_info": {
+          "package_name": "co.firebaseaddordeleteondatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674182233992-s7frem9aj7rqtp3if57qeqacbt4fcs12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXouScgfyaYGefDLrNfNqQltIvBbIadEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

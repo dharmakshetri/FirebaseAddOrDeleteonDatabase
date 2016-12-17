@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerListView.setAdapter(myAdapter);
     }
 
-    //Add Button click event
+    //add new user to database
     public void btnAddOnClick(View v) {
 
         String name = editTextName.getText().toString().trim();
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // update the user using subscription
+    // adding new user to end  the user using on firebase database
     public void updateDatabase(User user){
 
         databaseReference.child("users").push().setValue(user);

@@ -57,6 +57,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
             }
         });
         holder.myButtonDelete.setText("Delete");
+
+        // delete user from firebase database based upon the key
         holder.myButtonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

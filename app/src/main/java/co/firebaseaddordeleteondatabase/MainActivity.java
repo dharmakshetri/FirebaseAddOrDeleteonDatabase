@@ -27,6 +27,7 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
     public static  final String TAG="FIREBASE";
+
     public  RecyclerView recyclerListView;
     public  UserAdapter myAdapter;
     public  EditText editTextName;
@@ -43,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         databaseReference= FirebaseDatabase.getInstance().getReference();
         // creating layout
         creatingLayouts();
-
-        //updateAdapter();
     }
     public void creatingLayouts(){
         myProgressBar=(ProgressBar) findViewById(R.id.loader);
@@ -140,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
         myAdapter.setData(ls);
         myAdapter.notifyDataSetChanged();
     }
-    //destroy the subscription or unsubsciption
     @Override
     protected void onDestroy() {
         super.onDestroy();

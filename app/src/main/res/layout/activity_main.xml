@@ -3,37 +3,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_margin="5dp"
-        android:orientation="horizontal"
-        android:weightSum="12">
+       >
 
         <EditText
             android:id="@+id/nameEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
-            android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true"
             android:hint="Name" />
         <EditText
             android:id="@+id/countryEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_toRightOf="@+id/nameEditText"
             android:layout_gravity="center_vertical"
             android:hint="Country" />
         <Button
             android:id="@+id/addButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
             android:onClick="btnAddOnClick"
             android:text="Add" />
-    </LinearLayout>
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/nameEditText"
+            android:hint="weight" />
+    </RelativeLayout>
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"

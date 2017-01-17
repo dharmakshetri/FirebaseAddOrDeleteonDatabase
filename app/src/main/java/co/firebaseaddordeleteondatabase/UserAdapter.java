@@ -48,8 +48,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
     public void onBindViewHolder(final UserAdapter.MyViewHolder holder, final int position) {
         final User user = userList.get(position);
 
-        holder.myTextView.setText(userList.get(position).name);
-        holder.myCountryTextView.setText(userList.get(position).country);
+        holder.myTextView.setText(user.getName());
+        holder.myCountryTextView.setText(user.getCountry());
+        holder.myWeight.setText(String.valueOf(user.getWeight()));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +69,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             User userTemp = snapshot.getValue(User.class);
-                            if (user.name.equals(userTemp.name)) {
+                            if (user.getName().equals(userTemp.getName())) {
                                 databaseReference.child("users").child(snapshot.getKey().toString()).removeValue();
                                 userList.remove(position);
                                 notifyDataSetChanged();
@@ -101,12 +102,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
 
         public TextView myTextView;
         public TextView myCountryTextView;
+        public TextView myWeight;
         public Button myButtonDelete;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             myTextView = (TextView) itemView.findViewById(R.id.tvName);
             myCountryTextView = (TextView) itemView.findViewById(R.id.tvCountry);
+            myWeight=(TextView) itemView.findViewById(R.id.tvWeight);
             myButtonDelete = (Button) itemView.findViewById(R.id.deleteButton);
         }
     }

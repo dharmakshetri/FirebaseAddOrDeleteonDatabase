@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     public  UserAdapter myAdapter;
     public  EditText editTextName;
     public  EditText editTextCountry;
+    public  EditText editTextWeight;
     public  static TextView  textViewEmptyView;
     Button buttonAdd;
     public  ProgressBar myProgressBar;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         textViewEmptyView = (TextView) findViewById(R.id.tvEmptyView);
         editTextName = (EditText) findViewById(R.id.nameEditText);
         editTextCountry=(EditText) findViewById(R.id.countryEditText);
+        editTextWeight=(EditText) findViewById(R.id.weightEditText);
         buttonAdd = (Button) findViewById(R.id.addButton);
         recyclerListView=(RecyclerView) findViewById(R.id.recylerview_list);
         recyclerListView.setLayoutManager(new LinearLayoutManager(this));
@@ -63,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
         String name = editTextName.getText().toString().trim();
         String country=editTextCountry.getText().toString().trim();
-        User user= new User(name, country);
+        double weight=Double.parseDouble(editTextWeight.getText().toString().trim());
+        User user= new User(name, country, weight);
 
         if (TextUtils.isEmpty(name)) {
             Toast.makeText(getApplicationContext(), "Please enter name",
@@ -88,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
         editTextName.setText(null);
         editTextCountry.setText(null);
+        editTextWeight.setText(null);
 
         updateAdapter();
 

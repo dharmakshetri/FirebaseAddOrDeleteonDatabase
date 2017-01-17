@@ -32,5 +32,9 @@ Update the rules for your database to allow reads and writes from all users, as 
 * Clone the github ```java $git clone https://github.com/dharmakshetri/FirebaseAddOrDeleteonDatabase.git ```
 * Run the sample on Android device or emulator.
 
+#Demo Snapshots
+![Snap1](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/device-2016-12-20-153016.png)
+![Snap2](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/device-2016-12-20-153138.png)
+![Snap3](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/device-2016-12-20-153205.png)
 
 

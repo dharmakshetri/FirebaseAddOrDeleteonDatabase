@@ -25,6 +25,10 @@ Update the rules for your database to allow reads and writes from all users, as 
   }
 }
 ```
+## Data Snapshot
+
+![Snaphot1](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/Screen Shot 2017-08-30 at 6.10.41 PM.png)
+
 ## Getting Started
 
 * [Add Firebase to your Android Project.](https://firebase.google.com/docs/android/setup)

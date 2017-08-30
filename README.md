@@ -27,7 +27,7 @@ Update the rules for your database to allow reads and writes from all users, as 
 ```
 ## Data Snapshot
 
-![Snaphot1](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/Screen Shot 2017-08-30 at 6.10.41 PM.png)
+![Snaphot1](https://raw.githubusercontent.com/dharmakshetri/FirebaseAddOrDeleteonDatabase/master/Screen%20Shot%202017-08-30%20at%206.10.41%20PM.png)
 
 ## Getting Started
 
